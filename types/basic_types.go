@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"strconv"
 )
 
@@ -36,4 +37,31 @@ func main() {
 	// uintptr - for pointer arithmetic (rarely needed)
 	var addr uintptr = 0x12345678
 	fmt.Printf("uintptr (hex): 0x%x\n", addr)
+
+	// ======================================================
+	// 2. FLOATS - precision, NaN, Inf, math package
+	// ======================================================
+
+	fmt.Println("\n 2. Float Types")
+
+	var f32 float32 = 3.1415926
+	var f64 float64 = 3.14159265358979323846
+
+	fmt.Printf("float32: %.7f\n", f32)  // less precision
+	fmt.Printf("float64: %.15f\n", f64) // more precision
+
+	// Use math package for constants and functions
+	fmt.Printf("Pi: %f, E: %f\n", math.Pi, math.E)
+	fmt.Printf("Sin(Pi/2): %f\n", math.Sin(math.Pi/2))
+
+	// Special values
+	var nan = math.NaN()
+	var inf = math.Inf(1)
+	var ninf = math.Inf(-1)
+
+	fmt.Printf("NaN: %v, Inf: %v, -Inf: %v\n", nan, inf, ninf)
+
+	// NaN != NaN - always false!
+	fmt.Printf("nan == nan? %t\n", nan == nan) // false!
+	fmt.Printf("IsNaN(nan)? %t\n", math.IsNaN(nan))
 }
