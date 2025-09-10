@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math"
 	"strconv"
+	"unicode/utf8"
 )
 
 func main() {
@@ -64,4 +65,36 @@ func main() {
 	// NaN != NaN - always false!
 	fmt.Printf("nan == nan? %t\n", nan == nan) // false!
 	fmt.Printf("IsNaN(nan)? %t\n", math.IsNaN(nan))
+
+	// ======================================================
+	// 3. STRINGS - UTF-8, immutability, indexing, length
+	// ======================================================
+
+	fmt.Printf("\n 3.Strings and UTF-8")
+
+	// string with Unicode: emoji, Chinese, etc.
+	s := "Hello, 世界 🐹"
+
+	fmt.Printf("String: %s\n", s)
+	fmt.Printf("len(s) [bytes]: %d\n", len(s))
+	fmt.Printf("Rune count: %d\n", utf8.RuneCountInString(s))
+
+	// Iterate by bytes - DANGEROUS for Unicode
+	fmt.Print("Byte iteration: ")
+	for i := 0; i < len(s); i++ {
+		fmt.Printf("%c ", s[i]) // will print garbage for multi-byte runes
+	}
+	fmt.Println()
+
+	// Iterate by runes - CORRECT way
+	fmt.Printf("Rune iteration: ")
+	for _, r := range s {
+		fmt.Printf("%c ", r) // prints each character correctly
+	}
+	fmt.Println()
+
+	// Accessing by index gives you byte, not rune
+	fmt.Printf("s[0] (byte): %c (0x%x)\n", s[0], s[0]) // 'H'
+	// s[7] is first byte of '世' - meaningless alone
+	fmt.Printf("s[7] (byte in the middle of rune): 0x%x\n", s[7])
 }
