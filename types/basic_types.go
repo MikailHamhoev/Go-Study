@@ -97,4 +97,24 @@ func main() {
 	fmt.Printf("s[0] (byte): %c (0x%x)\n", s[0], s[0]) // 'H'
 	// s[7] is first byte of '世' - meaningless alone
 	fmt.Printf("s[7] (byte in the middle of rune): 0x%x\n", s[7])
+
+	// ======================================================
+	// 4. RUNE & BYTE - what they are, how to use them
+	// ======================================================
+
+	fmt.Println("\n 4. Rune and Byte")
+
+	// rune = int32 (Unicode code point)
+	var heart rune = '💖' // single quotes for rune literals
+	fmt.Printf("Heart rune: %c (U+%04X)\n", heart, heart)
+
+	// byte = uint8
+	var b byte = 'A'
+	fmt.Printf("Byte 'A': %c (0x%x)\n", b, b)
+
+	// Convert string to []rune → modify → back to string
+	runes := []rune(s)
+	runes[0] = 'J' // Change 'H' to 'J'
+	modified := string(runes)
+	fmt.Printf("Modified string: %s\n", modified)
 }
