@@ -117,4 +117,26 @@ func main() {
 	runes[0] = 'J' // Change 'H' to 'J'
 	modified := string(runes)
 	fmt.Printf("Modified string: %s\n", modified)
+
+	// ======================================================
+	// 5. STRING <-> []BYTE <-> []RUNE CONVERSIONS
+	// ======================================================
+
+	fmt.Println("\n 5. Conversions")
+
+	// string → []byte
+	bytes := []byte(s)
+	fmt.Printf("[]byte: %v\n", bytes)
+
+	// []byte → string
+	backToString := string(bytes)
+	fmt.Printf("Back to string: %s\n", backToString)
+
+	// string → []rune
+	runeSlice := []rune(s)
+	fmt.Printf("[]rune: %v\n", runeSlice)
+
+	// []rune → string
+	fromRune := string(runeSlice)
+	fmt.Printf("From []rune: %s\n", fromRune)
 }
