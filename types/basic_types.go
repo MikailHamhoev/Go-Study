@@ -139,4 +139,22 @@ func main() {
 	// []rune → string
 	fromRune := string(runeSlice)
 	fmt.Printf("From []rune: %s\n", fromRune)
+
+	// ======================================================
+	// 6. UTF-8 VALIDATION & UTILITIES
+	// ======================================================
+
+	fmt.Println("\n 6. UTF-8 Validation")
+
+	// Check if string is valid UTF-8
+	if utf8.ValidString(s) {
+		fmt.Println("String is valid UTF-8 ✅")
+	}
+
+	// Decode rune manually (advanced)
+	for i := 0; i < len(s); {
+		r, size := utf8.DecodeRuneInString(s[i:])
+		fmt.Printf("Rune: %c (U+%04X), bytes consumed: %d\n", r, r, size)
+		i += size
+	}
 }
