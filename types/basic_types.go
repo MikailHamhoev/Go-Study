@@ -157,4 +157,26 @@ func main() {
 		fmt.Printf("Rune: %c (U+%04X), bytes consumed: %d\n", r, r, size)
 		i += size
 	}
+
+	// ======================================================
+	// 7. STRING MANIPULATION UTILITIES
+	// ======================================================
+
+	fmt.Println("\n 7. Utilities & Gotchas")
+
+	// Concatenation
+	full := "Go" + " " + "Lang"
+	fmt.Println("Concatenated:", full)
+
+	// strconv — convert numbers to string
+	numStr := strconv.Itoa(42)
+	fmt.Printf("Number as string: '%s' (type %T)\n", numStr, numStr)
+
+	// Parse string to int
+	parsed, err := strconv.Atoi("123")
+	if err != nil {
+		fmt.Println("Parse error:", err)
+	} else {
+		fmt.Printf("Parsed int: %d\n", parsed)
+	}
 }
