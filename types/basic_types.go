@@ -179,4 +179,13 @@ func main() {
 	} else {
 		fmt.Printf("Parsed int: %d\n", parsed)
 	}
+
+	// Quote and unquote
+	quoted := strconv.Quote(`He said "Hello"`)
+	fmt.Println("Quoted:", quoted)
+
+	unquoted, err := strconv.Unquote(quoted)
+	if err == nil {
+		fmt.Println("Unquoted:", unquoted)
+	}
 }
