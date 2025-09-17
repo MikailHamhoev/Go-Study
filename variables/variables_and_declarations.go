@@ -28,4 +28,10 @@ func main() {
 	var message string // zero value: ""
 	message = "Good morning!"
 	fmt.Println("Message:", message)
+
+	// --- 2. SHORT VARIABLE DECLARATION (:=) - inside functions only
+	name := "Alice" // type inferred as string
+	age := 30       // type inferred as int
+	isStudent := true
+	fmt.Printf("%s is %d years old. Student? %t\n", name, age, isStudent)
 }
