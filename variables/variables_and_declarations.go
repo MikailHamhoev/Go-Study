@@ -34,4 +34,10 @@ func main() {
 	age := 30       // type inferred as int
 	isStudent := true
 	fmt.Printf("%s is %d years old. Student? %t\n", name, age, isStudent)
+
+	// --- 3. MULTIPLE ASSIGNMENTS & SWAP ---
+	a, b := 10, 20
+	fmt.Println("Before swap: a =", a, ", b =", b)
+	a, b = b, a // Go magic: no temp variable needed
+	fmt.Println("After swap: a =", a, "b =", b)
 }
