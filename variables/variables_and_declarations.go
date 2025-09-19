@@ -40,4 +40,15 @@ func main() {
 	fmt.Println("Before swap: a =", a, ", b =", b)
 	a, b = b, a // Go magic: no temp variable needed
 	fmt.Println("After swap: a =", a, "b =", b)
+
+	// --- 4. BLANK IDENTIFIER (ignore values) ---
+	_, remainder := divideWithRemainder(17, 5)
+	fmt.Println("Remainder:", remainder)
+}
+
+// Helper function: returns quotient and remainder
+func divideWithRemainder(dividend, divisor int) (quotient, remainder int) {
+	quotient = dividend / divisor
+	remainder = dividend % divisor
+	return // naked return (uses named return values)
 }
