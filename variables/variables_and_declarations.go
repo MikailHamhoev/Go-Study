@@ -44,6 +44,11 @@ func main() {
 	// --- 4. BLANK IDENTIFIER (ignore values) ---
 	_, remainder := divideWithRemainder(17, 5)
 	fmt.Println("Remainder:", remainder)
+
+	// --- 5. TYPE CONVERSIONS (explicit in Go) ---
+	var floatValue float64 = 3.14
+	var intValue int = int(floatValue) // truncates, does not round
+	fmt.Printf("Float: %f -> Int: %d\n", floatValue, intValue)
 }
 
 // Helper function: returns quotient and remainder
