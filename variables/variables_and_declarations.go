@@ -49,6 +49,15 @@ func main() {
 	var floatValue float64 = 3.14
 	var intValue int = int(floatValue) // truncates, does not round
 	fmt.Printf("Float: %f -> Int: %d\n", floatValue, intValue)
+
+	// --- 6. PRINT ALL PACKAGE-LEVEL VARS ---
+	fmt.Println("\n=== Package-Level State ===")
+	fmt.Println("Global Counter:", globalCounter)
+	fmt.Println("App Name:", appName)
+	fmt.Println("Debug Mode:", debugMode)
+	fmt.Println("Version:", version)
+	fmt.Println("Build Time:", buildTime)
+	fmt.Println("Author:", author)
 }
 
 // Helper function: returns quotient and remainder
