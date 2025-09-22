@@ -58,6 +58,12 @@ func main() {
 	fmt.Println("Version:", version)
 	fmt.Println("Build Time:", buildTime)
 	fmt.Println("Author:", author)
+
+	// --- 7. CONST USAGE ---
+	fmt.Println("\n=== Constants ===")
+	fmt.Println("AppName:", AppName)
+	fmt.Println("MaxRetries:", MaxRetries)
+	fmt.Println("Debug enabled:", Debug)
 }
 
 // Helper function: returns quotient and remainder
