@@ -64,6 +64,16 @@ func main() {
 	fmt.Println("AppName:", AppName)
 	fmt.Println("MaxRetries:", MaxRetries)
 	fmt.Println("Debug enabled:", Debug)
+
+	// --- 8. ZERO VALUES DEMO ---
+	var uninitializedInt int
+	var uninitializedString string
+	var uninitializedBool bool
+	var uninitializedPointer *int
+	var uninitializedSlice []string
+	var uninitializedMap map[string]int
+	var uninitializedChannel chan bool
+
 }
 
 // Helper function: returns quotient and remainder
