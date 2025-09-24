@@ -74,6 +74,18 @@ func main() {
 	var uninitializedMap map[string]int
 	var uninitializedChannel chan bool
 
+	fmt.Println("\n=== Zero Values ===")
+	fmt.Printf("int: %d\n", uninitializedInt)
+	fmt.Printf("string: %s\n", uninitializedString)
+	fmt.Printf("bool: %t\n", uninitializedBool)
+	fmt.Printf("pointer: %v\n", uninitializedPointer)
+	fmt.Printf("slice: %v (len: %d, cap:%d)\n",
+		uninitializedSlice,
+		len(uninitializedSlice),
+		cap(uninitializedSlice))
+	fmt.Printf("map: %v (len: %d)\n", uninitializedMap, len(uninitializedMap))
+	fmt.Printf("channel: %v\n", uninitializedChannel)
+
 }
 
 // Helper function: returns quotient and remainder
