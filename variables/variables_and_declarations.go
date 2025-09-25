@@ -94,3 +94,11 @@ func divideWithRemainder(dividend, divisor int) (quotient, remainder int) {
 	remainder = dividend % divisor
 	return // naked return (uses named return values)
 }
+
+// Safe divide with error handling
+func safeDivide(a, b float64) (float64, error) {
+	if b == 0 {
+		return 0, fmt.Errorf("cannot divide by zero")
+	}
+	return a / b, nil
+}
