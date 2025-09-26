@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 )
 
 // Declare package-level variables (outside any function)
@@ -86,6 +87,12 @@ func main() {
 	fmt.Printf("map: %v (len: %d)\n", uninitializedMap, len(uninitializedMap))
 	fmt.Printf("channel: %v\n", uninitializedChannel)
 
+	// --- 9. ERROR HANDLING PREVIEW ---
+	result, err := safeDivide(10, 0)
+	if err != nil {
+		log.Fatal("Division failed:", err)
+	}
+	fmt.Println("Division result:", result) // won't reach here
 }
 
 // Helper function: returns quotient and remainder
