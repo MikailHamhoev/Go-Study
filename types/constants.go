@@ -9,3 +9,17 @@ const appName = "GoMaster"        // untyped string constant
 const debug = false               // untyped bool
 
 const maxRetries int = 3 // typed constant — enforced at compile time
+
+// ======================================================
+// 2. IOTA — AUTO-GENERATED SEQUENCES (ENUM-LIKE)
+// ======================================================
+
+// Define a custom type for our "enum"
+type Status int
+
+const (
+	StatusPending   Status = iota // 0
+	StatusApproved                // 1
+	StatusRejected                // 2
+	StatusCancelled               // 3
+)
