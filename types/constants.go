@@ -10,6 +10,11 @@ const debug = false               // untyped bool
 
 const maxRetries int = 3 // typed constant — enforced at compile time
 
+// Implement String() to satisfy fmt.Stringer
+func (s Status) String() string {
+	return [...]string{"Pending", "Approved", "Rejected", "Cancelled"}[s]
+}
+
 // ======================================================
 // 2. IOTA — AUTO-GENERATED SEQUENCES (ENUM-LIKE)
 // ======================================================
