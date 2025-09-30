@@ -28,3 +28,17 @@ const (
 	StatusRejected                // 2
 	StatusCancelled               // 3
 )
+
+// ======================================================
+// 3. SKIP VALUES WITH UNDERSCORE
+// ======================================================
+
+type Priority int
+
+const (
+	_        Priority = iota // skip 0
+	Low                      // 1
+	Medium                   // 2
+	High                     // 3
+	Critical                 // 4
+)
