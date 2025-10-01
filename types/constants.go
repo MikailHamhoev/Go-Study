@@ -42,3 +42,18 @@ const (
 	High                     // 3
 	Critical                 // 4
 )
+
+func (p Priority) String() string {
+	switch p {
+	case Low:
+		return "Low"
+	case Medium:
+		return "Medium"
+	case High:
+		return "High"
+	case Critical:
+		return "Critical"
+	default:
+		return "Unknown"
+	}
+}
