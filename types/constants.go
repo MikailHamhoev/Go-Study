@@ -57,3 +57,16 @@ func (p Priority) String() string {
 		return "Unknown"
 	}
 }
+
+// ======================================================
+// 4. BIT FLAGS WITH IOTA — PERMISSION SYSTEM
+// ======================================================
+
+type Permission uint8
+
+const (
+	Read    Permission = 1 << iota // 1 (0001)
+	Write                          // 2 (0010)
+	Execute                        // 4 (0100)
+	Admin                          // 8 (1000)
+)
