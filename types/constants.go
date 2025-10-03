@@ -1,5 +1,7 @@
 package main
 
+import "strings"
+
 // ======================================================
 // 1. BASIC CONSTANTS — UNTYPED & TYPED
 // ======================================================
@@ -70,3 +72,24 @@ const (
 	Execute                        // 4 (0100)
 	Admin                          // 8 (1000)
 )
+
+// Implement String() to show flags
+func (p Permission) String() string {
+	var flags []string
+	if p&Read != 0 {
+		flags = append(flags, "Read")
+	}
+	if p&Write != 0 {
+		flags = append(flags, "Write")
+	}
+	if p&Execute != 0 {
+		flags = append(flags, "Execute")
+	}
+	if p&Admin != 0 {
+		flags = append(flags, "Admin")
+	}
+	if len(flags) == 0 {
+		return "NoPermission"
+	}
+	return strings.Join(flags, "|")
+}
