@@ -93,3 +93,8 @@ func (p Permission) String() string {
 	}
 	return strings.Join(flags, "|")
 }
+
+// Helper: check if permission is granted
+func (p Permission) Has(required Permission) bool {
+	return p&required == required
+}
