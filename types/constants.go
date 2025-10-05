@@ -98,3 +98,7 @@ func (p Permission) String() string {
 func (p Permission) Has(required Permission) bool {
 	return p&required == required
 }
+
+// ======================================================
+// 5. CUSTOM START + MANUAL VALUES
+// ======================================================
