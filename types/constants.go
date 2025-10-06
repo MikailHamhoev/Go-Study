@@ -102,3 +102,5 @@ func (p Permission) Has(required Permission) bool {
 // ======================================================
 // 5. CUSTOM START + MANUAL VALUES
 // ======================================================
+
+type HTTPMethod int
