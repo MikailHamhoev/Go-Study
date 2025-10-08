@@ -113,3 +113,20 @@ const (
 	DELETE                   // 4
 	PATCH                    // 5
 )
+
+func (h HTTPMethod) String() string {
+	switch h {
+	case GET:
+		return "GET"
+	case POST:
+		return "POST"
+	case PUT:
+		return "PUT"
+	case DELETE:
+		return "DELETE"
+	case PATCH:
+		return "PATCH"
+	default:
+		return "UNKNOWN"
+	}
+}
