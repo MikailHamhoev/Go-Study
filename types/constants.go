@@ -130,3 +130,7 @@ func (h HTTPMethod) String() string {
 		return "UNKNOWN"
 	}
 }
+
+// ======================================================
+// 6. UNTYPED CONSTANTS — FLEXIBLE MATH
+// ======================================================
