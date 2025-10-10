@@ -134,3 +134,10 @@ func (h HTTPMethod) String() string {
 // ======================================================
 // 6. UNTYPED CONSTANTS — FLEXIBLE MATH
 // ======================================================
+
+const (
+	KB = 1024        // untyped — can be used as int, float, etc.
+	MB = KB * 1024   // 1,048,576
+	GB = MB * 1024   // 1,073,741,824
+	TB = GB * 1024.0 // now becomes untyped float (because of .0)
+)
