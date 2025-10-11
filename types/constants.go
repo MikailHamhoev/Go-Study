@@ -141,3 +141,7 @@ const (
 	GB = MB * 1024   // 1,073,741,824
 	TB = GB * 1024.0 // now becomes untyped float (because of .0)
 )
+
+// ======================================================
+// 7. CONSTANT EXPRESSIONS — COMPILE-TIME COMPUTATION
+// ======================================================
