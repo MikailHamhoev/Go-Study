@@ -145,3 +145,9 @@ const (
 // ======================================================
 // 7. CONSTANT EXPRESSIONS — COMPILE-TIME COMPUTATION
 // ======================================================
+
+const (
+	MinPort    = 1
+	MaxPort    = 65535
+	TotalPorts = MaxPort - MinPort + 1 // computed at compile time!
+)
