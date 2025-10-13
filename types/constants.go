@@ -151,3 +151,7 @@ const (
 	MaxPort    = 65535
 	TotalPorts = MaxPort - MinPort + 1 // computed at compile time!
 )
+
+// ======================================================
+// 8. TYPE ALIAS + IOTA FOR GROUPING
+// ======================================================
