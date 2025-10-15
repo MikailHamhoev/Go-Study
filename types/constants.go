@@ -157,3 +157,10 @@ const (
 // ======================================================
 
 type Color uint8
+
+const (
+	Red Color = iota
+	Green
+	Blue
+	Yellow
+)
