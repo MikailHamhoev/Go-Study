@@ -164,3 +164,7 @@ const (
 	Blue
 	Yellow
 )
+
+func (c Color) String() string {
+	return [...]string{"Red", "Green", "Blue", "Yellow"}[c]
+}
