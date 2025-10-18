@@ -172,3 +172,5 @@ func (c Color) String() string {
 // ======================================================
 // 9. REAL-WORLD EXAMPLE: CONFIG FLAGS
 // ======================================================
+
+type ConfigFlag uint32
