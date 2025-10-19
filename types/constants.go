@@ -174,3 +174,11 @@ func (c Color) String() string {
 // ======================================================
 
 type ConfigFlag uint32
+
+const (
+	LogRequests     ConfigFlag = 1 << iota // 1
+	LogResponses                           // 2
+	EnableCache                            // 4
+	EnableDebug                            // 8
+	MaintenanceMode                        // 16
+)
