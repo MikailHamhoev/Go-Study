@@ -182,3 +182,5 @@ const (
 	EnableDebug                            // 8
 	MaintenanceMode                        // 16
 )
+
+func (cf ConfigFlag) String() string {
