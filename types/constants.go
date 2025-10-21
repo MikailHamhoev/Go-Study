@@ -184,3 +184,4 @@ const (
 )
 
 func (cf ConfigFlag) String() string {
+	var parts []string
