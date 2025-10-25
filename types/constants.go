@@ -188,3 +188,4 @@ func (cf ConfigFlag) String() string {
 	if cf&LogRequests != 0 {
 				parts = append(parts, "LogRequests")
 	}
+	if cf&LogResponses != 0 {
