@@ -190,3 +190,4 @@ func (cf ConfigFlag) String() string {
 	}
 	if cf&LogResponses != 0 {
 		parts = append(parts, "LogResponses")
+	}
