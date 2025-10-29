@@ -192,3 +192,4 @@ func (cf ConfigFlag) String() string {
 		parts = append(parts, "LogResponses")
 	}
 	if cf&EnableCache != 0 {
+		parts = append(parts, "EnableCache")
