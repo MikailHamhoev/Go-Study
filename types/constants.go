@@ -194,3 +194,4 @@ func (cf ConfigFlag) String() string {
 	if cf&EnableCache != 0 {
 		parts = append(parts, "EnableCache")
 	}
+	if cf&EnableDebug != 0 {
