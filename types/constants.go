@@ -196,3 +196,4 @@ func (cf ConfigFlag) String() string {
 	}
 	if cf&EnableDebug != 0 {
 		parts = append(parts, "EnableDebug")
+	}
