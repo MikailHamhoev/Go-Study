@@ -198,3 +198,4 @@ func (cf ConfigFlag) String() string {
 		parts = append(parts, "EnableDebug")
 	}
 	if cf&MaintenanceMode != 0 {
+		parts = append(parts, "MaintenanceMode")
