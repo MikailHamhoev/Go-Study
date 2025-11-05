@@ -199,3 +199,4 @@ func (cf ConfigFlag) String() string {
 	}
 	if cf&MaintenanceMode != 0 {
 		parts = append(parts, "MaintenanceMode")
+	}
