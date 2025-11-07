@@ -201,3 +201,4 @@ func (cf ConfigFlag) String() string {
 		parts = append(parts, "MaintenanceMode")
 	}
 	if len(parts) == 0 {
+		return "None"
