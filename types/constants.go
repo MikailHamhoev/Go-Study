@@ -186,7 +186,7 @@ const (
 func (cf ConfigFlag) String() string {
 	var parts []string
 	if cf&LogRequests != 0 {
-				parts = append(parts, "LogRequests")
+		parts = append(parts, "LogRequests")
 	}
 	if cf&LogResponses != 0 {
 		parts = append(parts, "LogResponses")
@@ -204,3 +204,4 @@ func (cf ConfigFlag) String() string {
 		return "None"
 	}
 	return strings.Join(parts, ",")
+}
