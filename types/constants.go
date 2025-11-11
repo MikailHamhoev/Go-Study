@@ -205,3 +205,7 @@ func (cf ConfigFlag) String() string {
 	}
 	return strings.Join(parts, ",")
 }
+
+// ======================================================
+// MAIN — DEMO EVERYTHING
+// ======================================================
