@@ -211,3 +211,5 @@ func (cf ConfigFlag) String() string {
 // ======================================================
 func main() {
 	fmt.Println("=== DAY 4: CONSTANTS & IOTA — ENUMS, BIT FLAGS, TYPE-SAFE PATTERNS ===")
+
+	// 1. Basic Constants
