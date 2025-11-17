@@ -215,3 +215,5 @@ func main() {
 	// 1. Basic Constants
 	fmt.Printf("Pi: %f\n", Pi)
 	fmt.Printf("App: %s, Debug: %t, MaxRetries: %d\n", appName, debug, maxRetries)
+	
+	// 2. Status Enum
