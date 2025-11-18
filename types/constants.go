@@ -217,3 +217,4 @@ func main() {
 	fmt.Printf("App: %s, Debug: %t, MaxRetries: %d\n", appName, debug, maxRetries)
 	
 	// 2. Status Enum
+		fmt.Println("\n🔹 Status Enum (iota auto-increment):")
