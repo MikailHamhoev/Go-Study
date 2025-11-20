@@ -219,3 +219,4 @@ func main() {
 	// 2. Status Enum
 		fmt.Println("\n🔹 Status Enum (iota auto-increment):")
 		var s Status = StatusApproved
+		fmt.Printf("Status: %s (value: %d)\n", s, s)
