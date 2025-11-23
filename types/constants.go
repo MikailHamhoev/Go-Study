@@ -222,3 +222,4 @@ func main() {
 		fmt.Printf("Status: %s (value: %d)\n", s, s)
 	// 3. Priority (skipped 0)
 	fmt.Println("\n🔹 Priority (skipped 0 with _):")
+	p := High
