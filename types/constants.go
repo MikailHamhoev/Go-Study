@@ -226,3 +226,5 @@ func main() {
 	fmt.Printf("Priority: %s (value: %d)\n", p, p)
 
 	// 4. Bit Flags — Permissions
+	fmt.Println("\n🔹 Permission Bit Flags:")
+	
