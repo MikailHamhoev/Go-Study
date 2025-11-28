@@ -227,5 +227,5 @@ func main() {
 
 	// 4. Bit Flags — Permissions
 	fmt.Println("\n🔹 Permission Bit Flags:")
-	userPerms := Read | Write | Execute
-	
+	userPerms := Read | Write | Execute		
+	adminPerms := Read | Write | Execute | Admin
