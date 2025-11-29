@@ -229,3 +229,6 @@ func main() {
 	fmt.Println("\n🔹 Permission Bit Flags:")
 	userPerms := Read | Write | Execute		
 	adminPerms := Read | Write | Execute | Admin
+
+	fmt.Printf("User: %s\n", userPerms)
+	
