@@ -231,4 +231,4 @@ func main() {
 	adminPerms := Read | Write | Execute | Admin
 
 	fmt.Printf("User: %s\n", userPerms)
-	
+	fmt.Printf("Admin: %s\n", adminPerms)
