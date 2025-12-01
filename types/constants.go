@@ -232,3 +232,4 @@ func main() {
 
 	fmt.Printf("User: %s\n", userPerms)
 	fmt.Printf("Admin: %s\n", adminPerms)
+	fmt.Printf("User has Write? %t\n", userPerms.Has(Write))
