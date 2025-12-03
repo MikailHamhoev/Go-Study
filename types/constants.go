@@ -234,3 +234,5 @@ func main() {
 	fmt.Printf("Admin: %s\n", adminPerms)
 	fmt.Printf("User has Write? %t\n", userPerms.Has(Write))
 	fmt.Printf("User has Admin? %t\n", userPerms.Has(Admin))
+
+	// 5. HTTP Methods
