@@ -236,3 +236,4 @@ func main() {
 	fmt.Printf("User has Admin? %t\n", userPerms.Has(Admin))
 
 	// 5. HTTP Methods
+	fmt.Println("\n🔹 HTTP Methods (custom start at 1):")
