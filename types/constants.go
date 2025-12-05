@@ -237,3 +237,4 @@ func main() {
 
 	// 5. HTTP Methods
 	fmt.Println("\n🔹 HTTP Methods (custom start at 1):")
+	method := POST
